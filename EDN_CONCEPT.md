@@ -102,4 +102,4 @@ Whether this exact model is the right answer, I don't know. But the *question* f
 
 *A more detailed normative draft — with API semantics, token schemas, conformance criteria, and implementation considerations — exists but is not published here.*
 
-*Feedback, critique, and conversation welcome: [LinkedIn](https://linkedin.com/in/nicallen)*
+*Feedback, critique, and conversation welcome: [LinkedIn](https://linkedin.com/in/nicallen27)*
