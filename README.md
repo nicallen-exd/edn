@@ -45,4 +45,4 @@ A more detailed normative draft exists but is not published here.
 
 **Nic Allen**
 
-Feedback, critique, and conversation welcome: [LinkedIn](https://linkedin.com/in/nicallen)
+Feedback, critique, and conversation welcome: [LinkedIn](https://linkedin.com/in/nicallen27) [Email](mailto:nic@mangataventures.com)
