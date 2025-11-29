@@ -46,3 +46,6 @@ A more detailed normative draft exists but is not published here.
 **Nic Allen**
 
 Feedback, critique, and conversation welcome: [LinkedIn](https://linkedin.com/in/nicallen27) [Email](mailto:nic@mangataventures.com)
+
+---
+Copyright © 2025 Nic Allen. All Rights Reserved. This document is provided for research and evaluation purposes only. No part of this architecture may be implemented in commercial software without express written permission.
