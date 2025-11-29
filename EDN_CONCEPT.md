@@ -14,13 +14,13 @@ This creates three persistent gaps:
 
 **Enumeration exposure.** During the window between attachment and policy enforcement, devices can discover their neighbors. ARP requests, IPv6 Neighbor Discovery, mDNS, DNS-SD — all leak information about what exists on the segment. An attacker who gains a foothold can map the network before any firewall rule fires.
 
-**Residual reachability.** When a user's privileges change — they leave the company, change roles, or trigger a security event — their device often retains network adjacency until someone manually intervenes. The identity system knows the user is gone; the network doesn't.
+**Residual reachability.** When a user's privileges change, they leave the company, change roles, or trigger a security event, their device often retains network adjacency until someone manually intervenes. The identity system knows the user is gone; the network doesn't.
 
 **Audit ambiguity.** Network admission decisions are scattered across RADIUS logs, switch configs, firewall rules, and DHCP leases. There's no portable, signed, tamper-evident record of *why* a device was allowed onto a segment at a specific time.
 
 Zero Trust has addressed these gaps at the application layer. We authenticate before accessing apps. We enforce least-privilege on API calls. We log everything.
 
-But at layer 2/3 — the network fabric itself — we're still running the same attach-then-filter model we've used for decades.
+But at layer 2/3, the network fabric itself, we're still running the same attach-then-filter model we've used for decades.
 
 ---
 
@@ -36,7 +36,7 @@ What if devices couldn't reach *or enumerate* a network segment without first pr
 > 
 > If you are not a member of a segment, you cannot send packets to it, receive packets from it, or discover what's on it.
 
-In this model, network adjacency is granted by short-lived, cryptographically-bound tokens — not by physical or VLAN membership. A device presents a token proving its identity and its right to join a specific segment. If the token is valid, the device gains adjacency. If not, the device is invisible to the segment and the segment is invisible to the device.
+In this model, network adjacency is granted by short-lived, cryptographically-bound tokens; not by physical or VLAN membership. A device presents a token proving its identity and its right to join a specific segment. If the token is valid, the device gains adjacency. If not, the device is invisible to the segment and the segment is invisible to the device.
 
 This isn't about replacing firewalls or encryption. Those still matter. EDN operates at a different layer: *who is allowed to be adjacent in the first place*.
 
@@ -50,9 +50,9 @@ This isn't about replacing firewalls or encryption. Those still matter. EDN oper
 
 **Anti-Enumeration by Default.** Across segment boundaries, discovery protocols are suppressed. ARP, Neighbor Discovery, mDNS — silent. You can't probe what you can't see. Within a segment, admitted members can discover each other normally.
 
-**Revocation as a First-Class Primitive.** Ending access isn't an afterthought. When an entitlement is revoked — whether by explicit action or token expiry — the device loses adjacency immediately. The control plane can measure and report revocation latency as an SLA.
+**Revocation as a First-Class Primitive.** Ending access isn't an afterthought. When an entitlement is revoked, whether by explicit action or token expiry, the device loses adjacency immediately. The control plane can measure and report revocation latency as an SLA.
 
-**Signed Evidence.** Every admission decision — granted, denied, renewed, revoked, expired — is cryptographically signed and logged. This creates a portable, tamper-evident audit trail of who was on what segment, when, and why.
+**Signed Evidence.** Every admission decision; granted, denied, renewed, revoked, expired, is cryptographically signed and logged. This creates a portable, tamper-evident audit trail of who was on what segment, when, and why.
 
 ---
 
