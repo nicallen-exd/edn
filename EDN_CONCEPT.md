@@ -103,3 +103,7 @@ Whether this exact model is the right answer, I don't know. But the *question* f
 *A more detailed normative draft — with API semantics, token schemas, conformance criteria, and implementation considerations — exists but is not published here.*
 
 *Feedback, critique, and conversation welcome: [LinkedIn](https://linkedin.com/in/nicallen27)*
+
+---
+
+Copyright © 2025 Nic Allen. All Rights Reserved. This document is provided for research and evaluation purposes only. No part of this architecture may be implemented in commercial software without express written permission.
